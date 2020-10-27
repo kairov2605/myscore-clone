@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Sport from './components/Sport';
+import Header from './components/Header';
+import { Football, Orders, Products } from './pages';
+import { Route } from 'react-router-dom';
+
+import './scss/app.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper ">
+      <Header />
+      <Sport items={['Хоккей', 'Теннис', 'Баскетбол', 'Волейбол', 'Гандбол']} />
+      <div className="content">
+        <div className="container">
+          <Route path="/" component={Football} exact />
+          <Route path="/order" component={Orders} />
+          <Route path="/product" component={Products} />
+        </div>
+      </div>
     </div>
   );
 }

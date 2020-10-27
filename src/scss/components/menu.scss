@@ -1,0 +1,64 @@
+.menu {
+  border-bottom: 4px solid #085f00;
+  display: flex;
+  &__list {
+    ul {
+      display: flex;
+      li {
+        white-space: nowrap;
+        margin-left: 2px;
+        height: 30px;
+        background-color: #e9e9e9;
+        padding: 8px 10px;
+        font-size: 13px;
+        cursor: pointer;
+        &.active {
+          background-color: #085f00;
+          color: white;
+          font-weight: bold;
+        }
+      }
+      li:first-child {
+        margin-left: 0px;
+      }
+      li:hover {
+        background-color: darken(#e9e9e9, 10%);
+      }
+    }
+  }
+  .calendar {
+    width: 140px;
+    display: flex;
+    margin-left: 57px;
+    &__nav {
+      cursor: pointer;
+      height: 30px;
+      width: 20px;
+      background-color: #e9e9e9;
+      img {
+        padding-left: 2px;
+        padding-top: 8px;
+      }
+    }
+    &__nav:hover {
+      background-color: darken(#e9e9e9, 10%);
+    }
+    &__date {
+      cursor: pointer;
+      background-color: #085f00;
+      padding: 5px 9px;
+      display: flex;
+      span {
+        padding-top: 2px;
+        white-space: nowrap;
+        margin-left: 6px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    &__date:hover {
+      background-color: darken(#085f00, 5%);
+    }
+  }
+}

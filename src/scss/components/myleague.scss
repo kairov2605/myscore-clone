@@ -1,0 +1,55 @@
+.myleague {
+  width: 155px;
+  padding: 10px 10px;
+  &__start {
+    height: 30px;
+    background-color: #ffe1af;
+    padding: 5px 25px;
+    span {
+      font-size: 13px;
+      font-weight: bold;
+      color: #808080;
+    }
+  }
+  &__kinds {
+    background-color: #f0f0f0;
+    li {
+      padding: 5px 5px 5px 25px;
+      cursor: pointer;
+      height: 25px;
+      font-size: 13px;
+      color: #656565;
+      &:hover {
+        background-color: darken(#f0f0f0, 8%);
+        text-decoration: underline;
+      }
+    }
+  }
+  &__star {
+    height: 86px;
+    width: 136px;
+    margin-top: 10px;
+    &-title {
+      background-color: #ffe1af;
+
+      h1 {
+        height: 27px;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-top: 5px;
+        color: #656565;
+      }
+    }
+    &-info {
+      height: 58px;
+      background-color: #f0f0f0;
+      p {
+        padding-left: 2px;
+        padding-top: 5px;
+        font-size: 13px;
+        color: #656565;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.sport {
+  height: 40px;
+  background-color: #085f00;
+  display: flex;
+  &__kinds {
+    ul {
+      display: flex;
+      margin-left: 225px;
+
+      li {
+        height: 40px;
+        text-align: center;
+        padding: 11px 30px;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: #085f00;
+        cursor: pointer;
+        color: white;
+
+        text-transform: uppercase;
+        &:hover {
+          background-color: darken(#085f00, 2%);
+        }
+        &.active {
+          background-color: white;
+          color: #808080;
+        }
+      }
+    }
+  }
+  &__more {
+    margin-left: 50px;
+    display: flex;
+    height: 40px;
+    padding: 11px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    img {
+    }
+    span {
+      margin-left: 5px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: darken(#085f00, 2%);
+    }
+  }
+}
